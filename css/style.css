@@ -157,7 +157,7 @@ dd{font-size:1.1rem}
 .visit-card>a{margin-top:1.5rem;color:var(--cream);font-weight:700;text-decoration:none;border-bottom:1px solid rgba(255,245,232,.5)}
 /* insta */
 .instagram-follow{max-width:760px;margin:2rem auto 0;padding:1.25rem;display:grid;grid-template-columns:minmax(170px,230px) 1fr;align-items:center;gap:clamp(1.5rem,5vw,3rem);text-align:left;border:1px solid #eadccf;border-radius:18px;background:#fff;box-shadow:0 18px 45px rgba(74,35,20,.08)}
-.qr-link{display:block;width:100%;aspect-ratio:auto;background:transparent;border:0;border-radius:0;overflow:visible;line-height:0;clip-path:inset(4% 10% round 20px)}
+.qr-link{display:block;width:100%;aspect-ratio:auto;background:transparent;border:0;border-radius:0;overflow:visible;line-height:0}
 .qr-link img{display:block;width:100%;height:auto;object-fit:contain;transition:transform .5s}
 .qr-link:hover{filter:drop-shadow(0 8px 12px rgba(74,35,20,.12))}
 .instagram-follow h3{font-size:clamp(1.7rem,4vw,2.6rem);margin-bottom:.6rem}
@@ -259,3 +259,6 @@ html.ld{overflow:hidden}
 .bar i{display:block;height:100%;background:var(--cream);transform:scaleX(0);transform-origin:left;animation:bar 1.4s .2s cubic-bezier(.6,0,.3,1) forwards}
 @keyframes bar{to{transform:scaleX(1)}}
 @media(prefers-reduced-motion:reduce){.ldin b span{transform:none;animation:none}.bar i{animation:none;transform:none}#ldr{transition:opacity .5s}#ldr.done{transform:none;opacity:0;visibility:hidden}}
+
+.location-map{overflow:hidden;border:1px solid rgba(255,245,232,.18);border-radius:18px;background:#fff;box-shadow:0 25px 55px rgba(0,0,0,.18)}.location-map iframe{display:block;width:100%;height:350px;border:0}.location-map>a{display:block;padding:.9rem 1rem;background:var(--burg);color:var(--cream);font-weight:700;text-decoration:none}.location-map>a:hover{text-decoration:underline}
+@media(max-width:620px){.location-map iframe{height:300px}}
